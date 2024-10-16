@@ -1,0 +1,20 @@
+{
+    "tricks": [
+      {"name": "Basic opens", "url": "https://youtu.be/bqEsxxeZGMY?si=g3BQamKZgz6WtM0B", "level": "diff1"},
+      {"name": "Fan", "url": "https://youtu.be/WTDOPMxnyBQ?si=LuqrwE5ZAItkhOmB", "level": "diff1"},
+      {"name": "Reverse opens", "url": "https://youtu.be/BYmXp9YXE_8?si=kUX4SwpZm8K_i6J7", "level": "diff1"},
+      {"name": "Zipper", "url": "https://youtu.be/YCD5-DNCNGs?si=VIMkl4P0be4IU05f", "level": "diff1"},
+      {"name": "Double Rollout", "url": "https://youtu.be/yLDm987WReU?si=-ZeT7O1BXsSe2W-A", "level": "diff1"},
+      {"name": "Pen Twirl", "url": "https://youtu.be/BBMD_qHcTME?si=BkctL6LHtYgel0np", "level": "diff1"},
+      {"name": "Index Roll", "url": "https://youtu.be/YBXKeZCbCN4?si=yiqMs-y0OvdTNCXC", "level": "diff2"},
+      {"name": "Orbit", "url": "https://youtu.be/dHx2zvDUkd4?si=Iw2OnH-LgEsRfLYe", "level": "diff2"},
+      {"name": "Underhand Transfer", "url": "https://youtu.be/T2_cocwznZY?si=vnc2a5Rq39cgftKS", "level": "diff2"},
+      {"name": "Flail", "url": "https://youtu.be/9tLqHZaSE1E?si=kHwZ9uQkg6qZVehh", "level": "diff2"},
+      {"name": "Knuckleduster", "url": "https://youtu.be/wd5TY3yYEd4?si=USxs5mnkjNo_wb0r", "level": "diff2"},
+      {"name": "ALT Reverse Behind the 8 Ball", "url": "https://youtu.be/vpDt7sdYwpQ?si=C-uBt6eNkBs50wTf", "level": "diff3"},
+      {"name": "Helix", "url": "https://youtu.be/e2ToFBmLUgU?si=7vr4Yav2iY-RTgYr", "level": "diff3"},
+      {"name": "Hellbent", "url": "https://youtu.be/9_PhTo6Sd4c?si=hkpXBkN0TlxaWqOD", "level": "diff3"},
+      {"name": "Inverse Hellbent", "url": "https://youtu.be/KoKlSebFJAo?si=shWPKfk0c7u65CPV", "level": "diff3"},
+      {"name": "Over Under", "url": "https://youtu.be/vjmA9MV9WsM?si=deZ2t_Le_cCKQuJW", "level": "diff3"}
+    ]
+}

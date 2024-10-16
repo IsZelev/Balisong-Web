@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" href="style.css"/>
+        <link href="bootstrap-5.3.3-dist/css" rel="stylesheet">
+        <title>Balisong tricks</title>
+    </head>
+
+    <body onload="searchTrick()">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="#" class="text" id="mainTitle"> Balisong tricks home </a>
+                        </div>
+                    </li>
+                        
+                    <li>
+                        <input id = "search" type = "text" placeholder = "Cerca un trick...">
+                        <button onclick = "searchTrick()">Cerca</button>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Livelli</a> 
+                        <div class="dropdown-content">
+                        <a href="#" onclick='searchTrick("diffA")'>Tutti i livelli</a>
+                        <a href="#" onclick='searchTrick("diff1")'>Principiante</a>
+                        <a href="#" onclick='searchTrick("diff2")'>Intermedio</a>
+                        <a href="#" onclick='searchTrick("diff3")'>Avanzato</a>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <a href="#" class="text" id = "filters"> Tutti i livelli</a>
+                    </li>
+                </ul>
+            </div>
+          </nav>
+        
+        <div class="text">
+            <h2 class = "tClass" id = "trickTitle"></h2>
+        </div>
+
+        <div id = "tableSpace">
+            <!--Fills with a table populated with data filtered from the search-->
+        </div>
+        
+        <script src="script.js"></script>
+    </body>
+
+</html>
+
+
+<!--
+
+-->
