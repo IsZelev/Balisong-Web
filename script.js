@@ -28,6 +28,7 @@ column.classlist.add("col-xs-12", "col-sm-6", "col-md-4", "col-lg-3");
 /*
 status: the JSON file doesn't work
 to add:
+-JSON file reference
 -bootstrap columns
 -style better the tricks buttons (e.g add color, style font ect..)
 */
