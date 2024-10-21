@@ -115,3 +115,21 @@ button
     border-radius: 10px;
     size: 100px;
 }
+
+.diff1
+{
+    color:white;
+    background-color:chartreuse;
+}
+
+.diff2
+{
+    color:white;
+    background-color:gold;
+}
+
+.diff3
+{
+    color:white;
+    background-color:red;
+}

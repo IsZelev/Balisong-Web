@@ -1,6 +1,6 @@
-//diff1 = beginner, diff2 = intermediate, diff3 = advanced, diffA = all
 //import('./tricks.json') non funziona
 
+//diff1 = beginner, diff2 = intermediate, diff3 = advanced, diffA = all
 let tricksList =
 [
     ["Basic opens", "https://youtu.be/bqEsxxeZGMY?si=g3BQamKZgz6WtM0B", "diff1"],
@@ -29,7 +29,7 @@ column.classlist.add("col-xs-12", "col-sm-6", "col-md-4", "col-lg-3");
 status: the JSON file doesn't work
 to add:
 -bootstrap columns
--selected level to appear next to the dropdown
+-style better the tricks buttons (e.g add color, style font ect..)
 */
 function searchTrick(diff)
 {
@@ -38,37 +38,33 @@ function searchTrick(diff)
     let tricksTable = [];
     let trickVal = document.getElementById("search").value;
     
-        let searchTrick = new RegExp(trickVal, 'gi');
-        let filterDiff = new RegExp(diff, "g");
+    let searchTrick = new RegExp(trickVal, 'gi');
+    let filterDiff = new RegExp(diff, "g");
 
-        let foundTrick = null;
-        tricksList.forEach(trick =>
+    let foundTrick = null;
+    tricksList.forEach(trick =>
+    {
+        let trickname = trick[0];
+        let trickDiff = trick[2];
+
+        if(trickname.match(searchTrick) && (diff == "diffA" || trickDiff.match(filterDiff)))
         {
-            let trickname = trick[0];
-            let trickDiff = trick[2];
-
-            console.log(trickname);
-
-            if(trickname.match(searchTrick) && (diff == "diffA" || trickDiff.match(filterDiff)))
-            {
-                console.log("matched!");
-                tricksTable.push(trick);
-                if(!foundTrick)
-                {
-                    foundTrick = trickname;
-                }
-            }
-        });
-
-        if (tricksTable.length != 0)
-        {
-            document.getElementById("trickTitle").innerHTML = "Trick disponibili";
-            showTricks(tricksTable);
-        }else
-        {
-            document.getElementById("trickTitle").innerHTML = "Ow! non abbiamo trovato quello che cerchi!"; // Messaggio di errore
+            console.log("matched!"); 
+            tricksTable.push(trick);
+            if(!foundTrick)
+                foundTrick = trickname;
         }
-    
+    });
+
+    if (tricksTable.length != 0)
+    {
+        document.getElementById("trickTitle").innerHTML = "Trick disponibili";
+        showTricks(tricksTable);
+    }else
+    {
+        document.getElementById("trickTitle").innerHTML = "Ow! non abbiamo trovato quello che cerchi!"; // Messaggio di errore
+    }
+
 
 }
 
@@ -90,6 +86,7 @@ function showTricks(tableData)//tricksTable on the searchTrick() function
         )
 
         let newCell = newRow.insertCell();
+        newCell.classList.add(row[2]);
         newCell.appendChild(button);
     }
     document.getElementById("tableSpace").appendChild(table);
