@@ -30,7 +30,6 @@ status: the JSON file doesn't work
 to add:
 -JSON file reference
 -bootstrap columns
--style better the tricks buttons (e.g add color, style font ect..)
 */
 function searchTrick(diff)
 {
@@ -72,25 +71,25 @@ function searchTrick(diff)
 function showTricks(tableData)//tricksTable on the searchTrick() function
 {
     console.log('executing "showTricks()" ')
-    let table = document.createElement("table");
-    for (let row of tableData)
-    {
-        let newRow = table.insertRow();
-        
-        let button = document.createElement("button");  
-        button.innerText = row[0];
 
+    let div = document.getElementById("tableSpace");
+
+    for (let trick of tableData)    //https://getbootstrap.com/docs/4.0/layout/grid/
+    {
+        let newDiv = document.createElement("div");
+        newDiv.classList.add("text-center");
+
+        let button = document.createElement("button");  
+        button.innerText = trick[0];
+        button.classList.add(trick[2], "buttonLinks");
         button.addEventListener("click", () =>
             {
-                window.location.href = row[1];
+                window.location.href = trick[1];
             }
         )
-
-        let newCell = newRow.insertCell();
-        newCell.classList.add(row[2]);
-        newCell.appendChild(button);
+        newDiv.appendChild(button);
+        div.appendChild(newDiv);
     }
-    document.getElementById("tableSpace").appendChild(table);
 }
 
 
