@@ -1,6 +1,5 @@
-//import('./tricks.json') non funziona
-
 //diff1 = beginner, diff2 = intermediate, diff3 = advanced, diffA = all
+// Define the tricksList array
 let tricksList =
 [
     ["Basic opens", "https://youtu.be/bqEsxxeZGMY?si=g3BQamKZgz6WtM0B", "diff1"],
@@ -14,23 +13,15 @@ let tricksList =
     ["Underhand Transfer", "https://youtu.be/T2_cocwznZY?si=vnc2a5Rq39cgftKS", "diff2"],
     ["Flail", "https://youtu.be/9tLqHZaSE1E?si=kHwZ9uQkg6qZVehh", "diff2"],
     ["Knuckleduster", "https://youtu.be/wd5TY3yYEd4?si=USxs5mnkjNo_wb0r", "diff2"],
-    ["ALT Reverse Behind the 8 Ball","https://youtu.be/vpDt7sdYwpQ?si=C-uBt6eNkBs50wTf","diff3"],
-    ["Helix","https://youtu.be/e2ToFBmLUgU?si=7vr4Yav2iY-RTgYr","diff3"],
-    ["Hellbent","https://youtu.be/9_PhTo6Sd4c?si=hkpXBkN0TlxaWqOD","diff3"],
-    ["Inverse Hellbent","https://youtu.be/KoKlSebFJAo?si=shWPKfk0c7u65CPV","diff3"],
-    ["Over Under","https://youtu.be/vjmA9MV9WsM?si=deZ2t_Le_cCKQuJW","diff3"]
+    ["ALT Reverse Behind the 8 Ball", "https://youtu.be/vpDt7sdYwpQ?si=C-uBt6eNkBs50wTf", "diff3"],
+    ["Helix", "https://youtu.be/e2ToFBmLUgU?si=7vr4Yav2iY-RTgYr", "diff3"],
+    ["Hellbent", "https://youtu.be/9_PhTo6Sd4c?si=hkpXBkN0TlxaWqOD", "diff3"],
+    ["Inverse Hellbent", "https://youtu.be/KoKlSebFJAo?si=shWPKfk0c7u65CPV", "diff3"],
+    ["Over Under", "https://youtu.be/vjmA9MV9WsM?si=deZ2t_Le_cCKQuJW", "diff3"]
 ]
 
-/*let column = document.createElement("div");
-column.classlist.add("col-xs-12", "col-sm-6", "col-md-4", "col-lg-3");
-*/
+console.log(tricksList);
 
-/*
-status: the JSON file doesn't work
-to add:
--JSON file reference
--bootstrap columns
-*/
 function searchTrick(diff)
 {
     cleartable();
@@ -63,6 +54,7 @@ function searchTrick(diff)
     }else
     {
         document.getElementById("trickTitle").innerHTML = "Ow! non abbiamo trovato quello che cerchi!"; // Messaggio di errore
+        document.getElementById("tableSpace").innerHTML;
     }
 
 
@@ -74,7 +66,7 @@ function showTricks(tableData)//tricksTable on the searchTrick() function
 
     let div = document.getElementById("tableSpace");
 
-    for (let trick of tableData)    //https://getbootstrap.com/docs/4.0/layout/grid/
+    for (let trick of tableData)
     {
         let newDiv = document.createElement("div");
         newDiv.classList.add("text-center");
